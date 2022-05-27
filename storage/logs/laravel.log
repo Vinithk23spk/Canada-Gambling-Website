@@ -1,0 +1,416 @@
+[2022-05-27 22:09:54] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 E:\\Canada-Gambling-Website\\app\\Exceptions\\Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): VanguardLTE\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-05-27 22:09:54] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\Canada-Gambl...', 1349)
+#1 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(571): include('E:\\Canada-Gambl...')
+#2 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('E:\\Canada-Gambl...')
+#3 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 E:\Canada-Gambling-Website\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\\\Canada-Gambl...', 1349)
+#1 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(571): include('E:\\\\Canada-Gambl...')
+#2 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('E:\\\\Canada-Gambl...')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 E:\\Canada-Gambling-Website\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-05-27 22:13:37] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 E:\\Canada-Gambling-Website\\app\\Exceptions\\Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): VanguardLTE\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-05-27 22:13:37] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\Canada-Gambl...', 1349)
+#1 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(571): include('E:\\Canada-Gambl...')
+#2 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('E:\\Canada-Gambl...')
+#3 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 E:\Canada-Gambling-Website\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\\\Canada-Gambl...', 1349)
+#1 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(571): include('E:\\\\Canada-Gambl...')
+#2 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('E:\\\\Canada-Gambl...')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 E:\\Canada-Gambling-Website\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-05-27 22:17:46] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 E:\\Canada-Gambling-Website\\app\\Exceptions\\Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): VanguardLTE\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-05-27 22:17:46] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\Canada-Gambl...', 1349)
+#1 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(571): include('E:\\Canada-Gambl...')
+#2 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('E:\\Canada-Gambl...')
+#3 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 E:\Canada-Gambling-Website\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\\\Canada-Gambl...', 1349)
+#1 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(571): include('E:\\\\Canada-Gambl...')
+#2 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('E:\\\\Canada-Gambl...')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 E:\\Canada-Gambling-Website\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-05-27 22:18:31] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 E:\\Canada-Gambling-Website\\app\\Exceptions\\Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): VanguardLTE\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-05-27 22:18:31] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\Canada-Gambl...', 1349)
+#1 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(571): include('E:\\Canada-Gambl...')
+#2 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('E:\\Canada-Gambl...')
+#3 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 E:\Canada-Gambling-Website\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\\\Canada-Gambl...', 1349)
+#1 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(571): include('E:\\\\Canada-Gambl...')
+#2 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('E:\\\\Canada-Gambl...')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 E:\\Canada-Gambling-Website\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-05-27 22:25:47] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 E:\\Canada-Gambling-Website\\app\\Exceptions\\Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): VanguardLTE\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-05-27 22:25:47] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\Canada-Gambl...', 1349)
+#1 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(571): include('E:\\Canada-Gambl...')
+#2 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('E:\\Canada-Gambl...')
+#3 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 E:\Canada-Gambling-Website\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\\\Canada-Gambl...', 1349)
+#1 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(571): include('E:\\\\Canada-Gambl...')
+#2 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('E:\\\\Canada-Gambl...')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 E:\\Canada-Gambling-Website\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-05-27 22:34:23] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 E:\\Canada-Gambling-Website\\app\\Exceptions\\Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): VanguardLTE\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-05-27 22:34:23] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\Canada-Gambl...', 1349)
+#1 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(571): include('E:\\Canada-Gambl...')
+#2 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('E:\\Canada-Gambl...')
+#3 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 E:\Canada-Gambling-Website\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\\\Canada-Gambl...', 1349)
+#1 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(571): include('E:\\\\Canada-Gambl...')
+#2 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('E:\\\\Canada-Gambl...')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 E:\\Canada-Gambling-Website\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-05-27 22:34:27] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 E:\\Canada-Gambling-Website\\app\\Exceptions\\Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): VanguardLTE\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-05-27 22:34:27] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\Canada-Gambl...', 1349)
+#1 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(571): include('E:\\Canada-Gambl...')
+#2 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('E:\\Canada-Gambl...')
+#3 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 E:\Canada-Gambling-Website\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\\\Canada-Gambl...', 1349)
+#1 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(571): include('E:\\\\Canada-Gambl...')
+#2 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('E:\\\\Canada-Gambl...')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 E:\\Canada-Gambling-Website\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-05-27 21:36:59] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:192)
+[stacktrace]
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('Call to undefin...', Array)
+#4 E:\\Canada-Gambling-Website\\app\\Exceptions\\Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Error))
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(366): VanguardLTE\\Exceptions\\Handler->report(Object(Error))
+#6 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(Error))
+#7 E:\\Canada-Gambling-Website\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2022-05-27 21:36:59] laravel.ERROR: Call to undefined function str_slug() {"exception":"[object] (Error(code: 0): Call to undefined function str_slug() at E:\\Canada-Gambling-Website\\config\\cache.php:91)
+[stacktrace]
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(72): require()
+#1 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#5 E:\\Canada-Gambling-Website\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2022-05-27 21:38:19] production.ERROR: Call to undefined function str_slug() {"exception":"[object] (Error(code: 0): Call to undefined function str_slug() at E:\\Canada-Gambling-Website\\config\\session.php:126)
+[stacktrace]
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(72): require()
+#1 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#5 E:\\Canada-Gambling-Website\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2022-05-27 22:38:56] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:110)
+[stacktrace]
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(240): collect(Array)
+#1 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve('stack')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get('stack')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('During inherita...', Array)
+#6 E:\\Canada-Gambling-Website\\app\\Exceptions\\Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(88): VanguardLTE\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-05-27 22:38:56] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php:1349
+Stack trace:
+#0 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\Canada-Gambl...', 1349)
+#1 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(571): include('E:\\Canada-Gambl...')
+#2 E:\Canada-Gambling-Website\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('E:\\Canada-Gambl...')
+#3 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Support\helpers.php(110): Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#4 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(130): collect(Array)
+#5 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(106): Illuminate\Foundation\PackageManifest->build()
+#6 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(89): Illuminate\Foundation\PackageManifest->getManifest()
+#7 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config('aliases')
+#8 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#9 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap(Object(Illuminate\Foundation\Application))
+#10 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith(Array)
+#11 E:\Canada-Gambling-Website\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#12 E:\Canada-Gambling-Website\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1349
+Stack trace:
+#0 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8192, 'Return type of ...', 'E:\\\\Canada-Gambl...', 1349)
+#1 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(571): include('E:\\\\Canada-Gambl...')
+#2 E:\\Canada-Gambling-Website\\vendor\\composer\\ClassLoader.php(428): Composer\\Autoload\\includeFile('E:\\\\Canada-Gambl...')
+#3 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Supp...')
+#4 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(130): collect(Array)
+#5 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#6 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#7 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config('aliases')
+#8 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#9 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap(Object(Illuminate\\Foundation\\Application))
+#10 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#11 E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#12 E:\\Canada-Gambling-Website\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 {main} at E:\\Canada-Gambling-Website\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
