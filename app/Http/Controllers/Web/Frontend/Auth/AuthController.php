@@ -1,4 +1,4 @@
-<?php 
+<?php
 namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
 {
     use VanguardLTE\User;
@@ -10,7 +10,7 @@ namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
         {
             $this->middleware('guest', [
                 'except' => [
-                    'getLogout', 
+                    'getLogout',
                     'apiLogin'
                 ]
             ]);
@@ -19,7 +19,7 @@ namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
             ]);
             $this->middleware('registration', [
                 'only' => [
-                    'getRegister', 
+                    'getRegister',
                     'postRegister'
                 ]
             ]);
@@ -28,9 +28,9 @@ namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
         public function getBasicTheme()
         {
             $frontend = settings('frontend', 'Default');
-            if( \Auth::check() ) 
+            if( \Auth::check() )
             {
-                
+
             }
             return $frontend;
         }
@@ -38,7 +38,7 @@ namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
         {
             $frontend = $this->getBasicTheme();
             $directories = [];
-            foreach( glob(resource_path() . '/lang/*', GLOB_ONLYDIR) as $fileinfo ) 
+            foreach( glob(resource_path() . '/lang/*', GLOB_ONLYDIR) as $fileinfo )
             {
                 $dirname = basename($fileinfo);
                 $directories[$dirname] = $dirname;
@@ -49,32 +49,32 @@ namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
         {
             $throttles = settings('throttle_enabled');
             $to = ($request->has('to') ? '?to=' . $request->get('to') : '');
-            if( $throttles && $this->hasTooManyLoginAttempts($request) ) 
+            if( $throttles && $this->hasTooManyLoginAttempts($request) )
             {
                 return $this->sendLockoutResponse($request);
             }
 
             $credentials = $request->getCredentials();
-            if( settings('use_email') ) 
+            if( settings('use_email') )
             {
-                if( filter_var($credentials['username'], FILTER_VALIDATE_EMAIL) ) 
+                if( filter_var($credentials['username'], FILTER_VALIDATE_EMAIL) )
                 {
                     $credentials = [
-                        'email' => $credentials['username'], 
+                        'email' => $credentials['username'],
                         'password' => $credentials['password']
                     ];
                 }
                 else
                 {
                     $credentials = [
-                        'username' => $credentials['username'], 
+                        'username' => $credentials['username'],
                         'password' => $credentials['password']
                     ];
                 }
             }
-            if( !\Auth::validate($credentials) ) 
+            if( !\Auth::validate($credentials) )
             {
-                if( $throttles ) 
+                if( $throttles )
                 {
                     $this->incrementLoginAttempts($request);
                 }
@@ -83,31 +83,31 @@ namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
             }
             $user = \Auth::getProvider()->retrieveByCredentials($credentials);
             if( $user->hasRole([
-                1, 
-                2, 
+                1,
+                2,
                 3
-            ])) 
+            ]))
             {
-                
+
             }
-            if( settings('use_email') && $user->isUnconfirmed() ) 
+            if( settings('use_email') && $user->isUnconfirmed() )
             {
                 return redirect()->to('login' . $to)->withErrors(trans('app.please_confirm_your_email_first'));
             }
-            if( $user->isBanned() ) 
+            if( $user->isBanned() )
             {
                 return redirect()->to('login' . $to)->withErrors(trans('app.your_account_is_banned'));
             }
-            if( $request->lang ) 
+            if( $request->lang )
             {
                 $user->update(['language' => $request->lang]);
             }
             \Auth::login($user, settings('remember_me') && $request->get('remember'));
-            if( settings('reset_authentication') && count($sessionRepository->getUserSessions(\Auth::id())) ) 
+            if( settings('reset_authentication') && count($sessionRepository->getUserSessions(\Auth::id())) )
             {
-                foreach( $sessionRepository->getUserSessions($user->id) as $session ) 
+                foreach( $sessionRepository->getUserSessions($user->id) as $session )
                 {
-                    if( $session->id != session()->getId() ) 
+                    if( $session->id != session()->getId() )
                     {
                         $sessionRepository->invalidateSession($session->id);
                     }
@@ -117,17 +117,17 @@ namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
         }
         public function apiLogin($game, $token, $mode)
         {
-            if( \Auth::check() ) 
+            if( \Auth::check() )
             {
                 event(new \VanguardLTE\Events\User\LoggedOut());
                 \Auth::logout();
             }
             $us = \VanguardLTE\User::where('api_token', '=', $token)->get();
-            if( isset($us[0]->id) ) 
+            if( isset($us[0]->id) )
             {
                 \Auth::loginUsingId($us[0]->id, true);
                 $ref = request()->server('HTTP_REFERER');
-                if( $mode == 'desktop' ) 
+                if( $mode == 'desktop' )
                 {
                     $gameUrl = 'game/' . $game . '?lobby_url=frame';
                 }
@@ -144,18 +144,18 @@ namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
         }
         protected function handleUserWasAuthenticated(\Illuminate\Http\Request $request, $throttles, $user)
         {
-            if( $throttles ) 
+            if( $throttles )
             {
                 $this->clearLoginAttempts($request);
             }
             event(new \VanguardLTE\Events\User\LoggedIn());
-            if( $request->has('to') ) 
+            if( $request->has('to') )
             {
                 return redirect()->to($request->get('to'));
             }
-            if( !$user->hasRole('user') ) 
+            if( !$user->hasRole('user') )
             {
-                if( !\Auth::user()->hasPermission('dashboard') ) 
+                if( !\Auth::user()->hasPermission('dashboard') )
                 {
                     return redirect()->route('backend.user.list');
                 }
@@ -206,7 +206,7 @@ namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
         protected function lockoutTime()
         {
             $lockout = (int)settings('throttle_lockout_time');
-            if( $lockout <= 1 ) 
+            if( $lockout <= 1 )
             {
                 $lockout = 1;
             }
@@ -224,15 +224,15 @@ namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
             $user->username = $request->username;
             $user->email = $request->email;
             $user->password = $request->password;
-            $user->currency = $request->currency;
+//            $user->currency = $request->currency;
             $user->first_name = $request->first_name;
             $user->last_name = $request->last_name;
             $user->birthday = $request->birthday;
             $user->phone = $request->phone;
-            $user->country = $request->country;
-            $user->city = $request->city;
+//            $user->country = $request->country;
+//            $user->city = $request->city;
             $user->address = $request->address;
-            $user->postalCode = $request->postalCode;
+//            $user->postalCode = $request->postalCode;
             $user->role_id = 1;
             $user->status = (settings('use_email') ? \VanguardLTE\Support\Enum\UserStatus::UNCONFIRMED : \VanguardLTE\Support\Enum\UserStatus::ACTIVE);
             $user->save();
@@ -242,11 +242,11 @@ namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
             event(new \VanguardLTE\Events\User\Registered($user));
             $message = (settings('use_email') ? trans('app.account_create_confirm_email') : trans('app.account_created_login'));
 
-            if( !settings('use_email') ) 
+            if( !settings('use_email') )
             {
                 \Auth::login($user, true);
             }
-            
+
             /*
             $data = $request->only('email',  'username');
             $user = $this->users->create(array_merge($data, [
@@ -257,7 +257,7 @@ namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
             $user->attachRole($role);
             event(new \VanguardLTE\Events\User\Registered($user));
             $message = (settings('use_email') ? trans('app.account_create_confirm_email') : trans('app.account_created_login'));
-            if( !settings('use_email') ) 
+            if( !settings('use_email') )
             {
                 \Auth::login($user, true);
             }
@@ -271,18 +271,18 @@ namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
             $logins = [];
             $generate = $username;
             $tmp = explode(',', settings('bots_login'));
-            foreach( $tmp as $item ) 
+            foreach( $tmp as $item )
             {
                 $item = trim($item);
-                if( $item ) 
+                if( $item )
                 {
                     $logins[] = $item;
                 }
             }
-            while( !$generated ) 
+            while( !$generated )
             {
                 $count = \VanguardLTE\User::where('username', $generate)->count();
-                if( $count || in_array($generate, $logins) ) 
+                if( $count || in_array($generate, $logins) )
                 {
                     $generate = $username . '_' . $key;
                 }
@@ -296,10 +296,10 @@ namespace VanguardLTE\Http\Controllers\Web\Frontend\Auth
         }
         public function confirmEmail($token)
         {
-            if( $user = $this->users->findByConfirmationToken($token) ) 
+            if( $user = $this->users->findByConfirmationToken($token) )
             {
                 $this->users->update($user->id, [
-                    'status' => \VanguardLTE\Support\Enum\UserStatus::ACTIVE, 
+                    'status' => \VanguardLTE\Support\Enum\UserStatus::ACTIVE,
                     'confirmation_token' => null
                 ]);
                 return redirect()->to('/')->withSuccess(trans('app.email_confirmed_can_login'));
